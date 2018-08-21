@@ -1,0 +1,9 @@
+[Unit]
+Description=Proxy server for NFGM Website
+
+[Service]
+ExecStart=_NODE_ /etc/nfgm-backend/server.js
+EnvironmentFile=/etc/nfgm-backend/nfgm-backend.env
+
+[Install]
+WantedBy=multi-user.target
